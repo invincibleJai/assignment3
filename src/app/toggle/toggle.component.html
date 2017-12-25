@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="triggerBtnClick()">Display details</button>
+
+<p *ngIf="displayPg">
+  toggle works, yahoo!!!
+</p>
+
+<p *ngFor="let counter of counters" [ngStyle]="{'background-color': getBgColor(counter)}"
+[ngClass]="{'txt-color': getTxtColor(counter)}">
+  {{counter}}
+</p>
