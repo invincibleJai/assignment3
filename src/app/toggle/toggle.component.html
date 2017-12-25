@@ -4,7 +4,7 @@
   toggle works, yahoo!!!
 </p>
 
-<p *ngFor="let counter of counters" [ngStyle]="{'background-color': getBgColor(counter)}"
-[ngClass]="{'txt-color': getTxtColor(counter)}">
+<p *ngFor="let counter of counters; let i = index" [ngStyle]="{'background-color': getBgColor(i)}"
+[ngClass]="{'txt-color': getTxtColor(i)}">
   {{counter}}
 </p>

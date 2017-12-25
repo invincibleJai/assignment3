@@ -18,7 +18,7 @@ export class ToggleComponent implements OnInit {
 
   triggerBtnClick(){
     this.displayPg = !this.displayPg;
-    this.counters.push(this.count++);
+    this.counters.push(new Date());
     console.log('yay!!');
   }
 
